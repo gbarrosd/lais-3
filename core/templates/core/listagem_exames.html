@@ -1,0 +1,47 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block titulo %}Listagem de exames{% endblock %}
+{% block corpo %}
+<div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Exames marcados e finalizados</h3>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body table-responsive p-0">
+          <table class="table table-hover text-nowrap">
+            <thead>
+                <tr>
+                    <th>
+                        Data e hora
+                    </th>
+                    <th>
+                        Local
+                    </th>
+                    <th>
+                        Situação
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for exame in exames %}
+                <tr>
+                    <td>{{exame.dia_semana}} - {{exame.data}} às {{exame.hora}}</td>
+                    <td>{{exame.estabelecimento.co_cnes}} - {{exame.estabelecimento.no_fantasia}}</td>
+                    {% if exame.exame == 0 %}
+                    <td>Agendado</td>
+                    {% else %}
+                    <td>Finalizado</td>
+                    {% endif %}
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+    </div>
+  </div>
+{% endblock %}

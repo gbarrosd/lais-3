@@ -1,0 +1,76 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block titulo %}Agendamento online{% endblock %}
+{% block corpo %}
+      {% if messages %}
+        {% for message in messages %}
+        <div class="card card-danger" style="width: 400px;">
+          <div class="card-header">
+            <h3 class="card-title">Atenção!</h3>
+        
+            <div class="card-tools">
+              <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fa fa-times"></i>
+              </button>
+            </div>
+            <!-- /.card-tools -->
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body">
+            {{ message }}
+          </div>
+          <!-- /.card-body -->
+        </div>
+        {% endfor %}
+    {% endif %}
+        <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Informações do usuário</h3>
+     
+                </div> 
+                <!-- /.card-header -->
+                <div class="card-body table-responsive p-0">
+                  <table class="table table-hover text-nowrap">
+                    <tbody>
+                        <tr>
+                          <td>Nome</td>
+                          <td>
+                            {{user.get_full_name}}
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>CPF</td>
+                          <td>
+                            {{user.get_username}}
+                          </td>
+                        </tr>
+                        <tr>
+                            <td>Data nascimento</td>
+                            <td>
+                                {{user.nascimento}}
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Idade</td>
+                            <td>
+                                {{idade}} anos
+                            </td>
+                          </tr>
+                          {% if not user.is_superuser %}
+                          <tr>
+                            <td>Apto:</td>
+                            <td>
+                                {{apto}}
+                            </td>
+                          </tr>
+                          {% endif %}
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+{% endblock %}

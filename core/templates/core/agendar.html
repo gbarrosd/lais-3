@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block titulo %}Agendamento online{% endblock %}
+{% block corpo %}
+<label class="display-6">
+    {{dia}} - {{data}}
+</label>
+<label class="display-6">
+    {{no_estabelecimento}}
+</label>
+<hr>
+<label class="dipslay-6">Horários disponiveis:</label>
+<p></p>
+<form action="{% url 'agendar' %}" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="usuario" value="{{id}}">
+    <input type="hidden" name="dia_semana" value="{{dia}}">
+    <input type="hidden" name="data" value="{{data}}">
+    <input type="hidden" name="estabelecimento" value="{{estabelecimento}}">
+    <input type="hidden" name="aux" value="2">
+    <div class="container-fluid">
+        <div class="row">
+            {% if idade >= '18' and idade <= '29' %}
+            {% include "core/formsHorario/_form18a29.html" %}
+
+            {% elif idade >= '30' and idade <= '39' %}
+            {% include "core/formsHorario/_form30a39.html" %}
+
+            {% elif idade >= '40' and idade <= '49' %}
+            {% include "core/formsHorario/_form40a49.html" %}
+
+            {% elif idade >= '50' and idade <= '59' %}
+            {% include "core/formsHorario/_form50a59.html" %}
+
+            {% else  %}
+            {% include "core/formsHorario/_formIdosos.html" %}
+            {% endif %}
+        </div>
+    </div>
+    <a href="{% url 'pre_agendamento' id %}" class="btn btn-primary mt-4 ms-1">
+        Voltar
+    </a>
+    <input type="submit" class="btn btn-success mt-4 ms-1" value="Salvar">
+</form>
+{% endblock %}

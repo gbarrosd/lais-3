@@ -1,0 +1,163 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AGENDA | COVID</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="{% static 'core/_css/adminlte.min.css' %}">
+  <link rel="stylesheet" href="{% static 'core/_css/all.min.css' %}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <div class="navbar-nav nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fa fa-bars"></i></a>
+        </div>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="{% url 'dashboard' %}" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Contato</a>
+          </li>
+        </ul>
+    </nav>
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="{% url 'dashboard' %}" class="brand-link">
+        <span class="brand-text font-weight-light">AGENDA | COVID</span>
+      </a>
+  
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="info">
+            <a href="#" class="d-block">Bem vindo, {{user}}</a>
+          </div>
+        </div>
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Procurar" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fa fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                 with font-awesome or any other icon font library -->
+
+            <li class="nav-item menu-open">
+              <ul class="nav nav-treeview">
+                {% if user.is_superuser %}
+                <li class="nav-item menu-open">
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="{% url 'listagem_estab' %}" class="nav-link">
+                        <i class="fa fa-eye nav-icon"></i>
+                        <p>ESTABELECIMENTOS</p>
+                      </a>
+                    </li>
+                {% elif apto == 'Sim' %}
+                <li class="nav-item">
+                  <a href="{% url 'pre_agendamento' user.id %}" class="nav-link">
+                    <i class="fa fa-circle nav-icon"></i>
+                    <p>AGENDAR</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{% url 'listagem_exames' user.id %}" class="nav-link">
+                    <i class="fa fa-circle nav-icon"></i>
+                    <p>MEUS AGENDAMENTOS</p>
+                  </a>
+                </li>
+                {% endif %}
+              </ul>
+            </li>
+            <li class="nav-item ml-2">
+              <a href="{% url 'logout' %}" class="nav-link">
+                <i class="fa fa-sign-out"></i>
+                <p> Sair</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+  
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 1261.69px;">
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>{% block titulo %} {% endblock %}</h1>
+            </div>
+            
+          </div>
+        </div>
+    <!-- /.container-fluid -->
+      </section>
+      <section class="content">
+        <div class="container-fluid">
+            {% block corpo %}
+
+            {% endblock %}
+        </div>
+      </section>    
+    </div>
+    <!-- /.content-wrapper -->
+  
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+      <div class="p-3">
+        <h5>Title</h5>
+        <p>Sidebar content</p>
+      </div>
+    </aside>
+    <!-- /.control-sidebar -->
+  
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <!-- To the right -->
+      <div class="float-right d-none d-sm-inline">
+        Anything you want
+      </div>
+      <!-- Default to the left -->
+      <strong>Copyright &copy; 2022-2022 <a href="#">Guilherme</a>
+    </footer>
+  </div>
+  <!-- ./wrapper -->
+  
+    
+
+
+
+
+
+  <!-- jQuery -->
+  <script src="{% static 'core/_js/jquery.min.js' %}"></script>
+  <!-- Bootstrap 4 -->
+  <script src="{% static 'core/_js/bootstrap.bundle.min.js' %}"></script>
+  <!-- AdminLTE App -->
+  <script src="{% static 'core/_js/adminlte.min.js' %}"></script> 
+  </body>
+</html>

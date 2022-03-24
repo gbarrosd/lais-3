@@ -1,0 +1,492 @@
+[
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Pessoas acima de 75 anos",
+            "codigo": null
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Pessoas entre 60 a 74 anos",
+            "codigo": null
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Forças de Segurança e Salvamento",
+            "codigo": null
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Funcionário do Sistema de Privação de Liberdade",
+            "codigo": "001401"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Trabalhadores da Saúde",
+            "codigo": null
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Pessoas acima de 60 anos institucionalizadas",
+            "codigo": "000301"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Pessoas em Situação de Rua",
+            "codigo": "001201"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Trabalhadores da educação",
+            "codigo": null
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Caminhoneiro",
+            "codigo": "001002"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Trabalhadores Portuários",
+            "codigo": "001301"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Pessoas de 60 a 64 anos",
+            "codigo": "000201"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Pessoas de 65 a 69 anos",
+            "codigo": "000202"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Pessoas de 70 a 74 anos",
+            "codigo": "000203"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Pessoas de 75 a 79 anos",
+            "codigo": "000204"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Pessoas de 80 anos ou mais",
+            "codigo": "000205"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Síndrome de Down",
+            "codigo": "000110"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Marinha do Brasil - MB",
+            "codigo": "000401"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Exército Brasileiro - EB",
+            "codigo": "000402"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Força Aérea Brasileira - FAB",
+            "codigo": "000403"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Bombeiro Civil",
+            "codigo": "000501"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Bombeiro Militar",
+            "codigo": "000502"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Guarda Municipal",
+            "codigo": "000503"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Policial Rodoviário Federal",
+            "codigo": "000504"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Policial Civil",
+            "codigo": "000505"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Policial Federal",
+            "codigo": "000506"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Policial Militar",
+            "codigo": "000507"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Quilombola",
+            "codigo": "000601"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Povos indígenas em terras indígenas",
+            "codigo": "000701"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Ensino Básico",
+            "codigo": "000801"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Ensino Superior",
+            "codigo": "000802"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Auxiliar de Veterinário",
+            "codigo": "000901"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Biólogo",
+            "codigo": "000902"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Biomédico",
+            "codigo": "000903"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Cozinheiro e Auxiliares",
+            "codigo": "000904"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Cuidador de Idosos",
+            "codigo": "000905"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Doula/Parteira",
+            "codigo": "000906"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Enfermeiro(a)",
+            "codigo": "000907"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Farmacêutico",
+            "codigo": "000908"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Fisioterapeutas",
+            "codigo": "000909"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Fonoaudiólogo",
+            "codigo": "000910"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Funcionário do Sistema Funerário que tenham contato com cadáveres potencialmente contaminados",
+            "codigo": "000911"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Médico",
+            "codigo": "000912"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Médico Veterinário",
+            "codigo": "000913"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Motorista de Ambulância",
+            "codigo": "000914"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Nutricionista",
+            "codigo": "000915"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Odontologista",
+            "codigo": "000916"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Pessoal da Limpeza",
+            "codigo": "000917"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Profissionais de Educação Física",
+            "codigo": "000918"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Psicólogo",
+            "codigo": "000919"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Recepcionista",
+            "codigo": "000920"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Segurança",
+            "codigo": "000921"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Assistente Social",
+            "codigo": "000922"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Técnico de Enfermagem",
+            "codigo": "000923"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Técnico de Veterinário",
+            "codigo": "000924"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Terapeuta Ocupacional",
+            "codigo": "000925"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Outros",
+            "codigo": "000926"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Auxiliar de Enfermagem",
+            "codigo": "000927"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Técnico de Odontologia",
+            "codigo": "000928"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Estudante",
+            "codigo": "000929"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Aéreo",
+            "codigo": "001001"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Coletivo Rodoviário Passageiros Urbano e de Longo Curso",
+            "codigo": "001003"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Ferroviário",
+            "codigo": "001004"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Metroviário",
+            "codigo": "001005"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Aquaviário",
+            "codigo": "001006"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Pessoas com Deficiência Institucionalizadas",
+            "codigo": "001101"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Pessoas com Deficiências Permanente Grave",
+            "codigo": "001102"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "População Privada de Liberdade",
+            "codigo": "001501"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Trabalhadores Industriais",
+            "codigo": "001601"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Pessoas ACAMADAS de 75 a 79",
+            "codigo": "000204"
+        }
+    },
+    {
+        "model": "usuarios.GruposAtendimento",
+        "fields": {
+            "nome": "Pessoas ACAMADAS de 80 anos ou mais",
+            "codigo": "000205"
+        }
+    }
+]
